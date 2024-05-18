@@ -1,0 +1,5 @@
+# Crie o comando pra criar o banco de dados MongoDB usando os requisitos abaixo:
+#   * O usuário root do banco deve ser mongo_usr
+#   * A senha do usuário root deve ser mongo_pwd
+
+docker container run -d -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=mongo_usr -e MONGO_INIT_ROOT_PASSWORD=mongo_pwd mongo
